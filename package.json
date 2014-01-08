@@ -1,0 +1,25 @@
+{
+    "name": "karma-ejs-preprocessor",
+    "version": "0.1.0",
+    "description": "A Karma plugin. Compiles underscore embedded js templates.",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/SebastianZaha/karma-ejs-preprocessor.git"
+    },
+    "keywords": [
+        "karma-plugin",
+        "karma-preprocessor",
+        "ejs",
+        "underscore"
+    ],
+    "author": {
+        "name": "Sebastian Zaha",
+        "email": "sebastian.zaha@gmail.com"
+    },
+    "licenses": "MIT",
+    "dependencies": "ejs"
+}
