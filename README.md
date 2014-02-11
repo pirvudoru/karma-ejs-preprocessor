@@ -1,9 +1,11 @@
-# Preprocesor for .ejs files for karma
+Preprocesor for .ejs files for karma
+====================================
 
 Enables support the underscore.js `.ejs` template system.
 
 
-## Usage
+Usage
+-----
 
 As shown below, add `karma-ejs-preprocessor` to your plugins, add ejs to the preprocessors
 directive, and in the `ejsOptions` add a path (absolute) to the location of your templates.
@@ -17,18 +19,21 @@ directive, and in the `ejsOptions` add a path (absolute) to the location of your
         '**/*.ejs': ['ejs']
     },
     ejsOptions: {
-        parentPath: railsRoot + 'app/assets/javascripts/templates/'
+        parentPath: 'app/assets/javascripts/templates/'
     },
     [...]
+
+The `parentPath` is relative to the `basePath` specified in your config. 
 
 The `JST` global variable will contain keys relative to `parentPath` for your templates. E.g. for
 the file `/Users/sebi/devel/super_site/app/assets/javascripts/templates/homepage/header.ejs`, by
 specifying the proper `parentPath` you can get the template initialized in `JST['homepage/header']`.
 
 
-## License
+License
+-------
 
-Copyright (c) 2013 Sebastian Zaha
+Copyright (c) 2013-2014 Sebastian Zaha
 
 MIT License
 
