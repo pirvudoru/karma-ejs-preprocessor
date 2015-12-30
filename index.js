@@ -3,7 +3,7 @@ var path = require('path');
 
 var createTemplateName = function (basePath, parentPath, filePath) {	
 	var extensionRegex = /(\.[a-z]+)+$/;
-	var absolutePath = path.join(basePath, parentPath);
+	var absolutePath = path.join(basePath, parentPath).replace(/\\/g, '/');
 	var normalizedAbsolutePath = absolutePath.lastIndexOf('/') == absolutePath.length - 1 
 					? absolutePath
 					: absolutePath + '/';
